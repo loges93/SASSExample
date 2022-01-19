@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.headerdiv {
+  position: absolute;
+  height: 40vh;
+  background-color: #C6ECD9;
+  width: 2000px;
+  z-index: -1;
+  -webkit-transform: skewY(-10deg);
+          transform: skewY(-10deg);
+  -webkit-box-shadow: 0 0 10px #9e9a9a, 0 0 15px #9e9a9a;
+          box-shadow: 0 0 10px #9e9a9a, 0 0 15px #9e9a9a;
+}
+
+.headingsDiv {
+  margin-top: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  width: 100%;
+  background-color: #C6ECD9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20vh;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header img {
+  height: 15vh;
+  margin-top: 3em;
+  margin-right: 3em;
+}
+
+header h1 {
+  font-family: sassIThink;
+  color: black;
+  font-size: 4em;
+  font-family: Century Gothic, sans serif;
+  -webkit-transform: rotateZ(-10deg);
+          transform: rotateZ(-10deg);
+}
+
+h3:nth-child(1) {
+  font-size: 20px;
+  color: #cc6699;
+  font-family: Century Gothic, sans serif;
+}
+
+h3:nth-child(2) {
+  font-size: 30px;
+  color: #C6ECD9;
+  font-family: Century Gothic, sans serif;
+}
+
+h3:nth-child(3) {
+  font-size: 40px;
+  color: #cc6699;
+  font-family: Century Gothic, sans serif;
+}
+
+h3:nth-child(4) {
+  font-size: 50px;
+  color: #C6ECD9;
+  font-family: Century Gothic, sans serif;
+}
+
+h3:nth-child(5) {
+  font-size: 60px;
+  color: #cc6699;
+  font-family: Century Gothic, sans serif;
+}
+/*# sourceMappingURL=style.css.map */

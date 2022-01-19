@@ -1,0 +1,67 @@
+$sass-primary: #cc6699;
+$page-secondary: #C6ECD9;
+$font: Century Gothic, sans serif;
+$shadow: #9e9a9a;
+*{
+    padding:0;
+    margin:0;
+}
+
+.headerdiv{
+    position: absolute;
+    height: 40vh;
+    background-color: $page-secondary;
+    width: 2000px;
+    z-index:-1;
+    transform: skewY(-10deg);
+    box-shadow: 0 0 10px $shadow, 0 0 15px $shadow;
+}
+.headingsDiv{
+    margin-top:40vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 100%;
+    background-color: $page-secondary;
+    display:flex;
+    height: 20vh;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    img{
+        height:15vh;
+        margin-top: 3em;
+        margin-right: 3em;
+
+    }
+    h1{
+        font-family: sassIThink;
+        color: black;
+        font-size: 4em;
+        font-family: $font;
+        transform: rotateZ(-10deg);
+    }
+}
+
+$sizes: 20px, 30px, 40px, 50px, 60px;
+
+//Loops through all sizes and sets h3 font-size and also changes color based on even or odd
+@each $size in $sizes{
+    $i: index($sizes, $size);
+    h3:nth-child(#{$i}){
+        font-size: $size;
+        @if $i % 2 == 0{
+            color:$page-secondary;
+        }
+        @else{
+            color:$sass-primary;
+        }
+        font-family: $font;
+    }
+}
+
+
+
